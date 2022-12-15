@@ -1,5 +1,5 @@
 {
-  "name": "@sakura/showjs",
+  "name": "@sakurasz/show.js",
   "version": "1.0.0",
   "description": "",
   "main": "dist/show.esm-bundler.js",
@@ -8,9 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node scripts/build.js"
   },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suanzi-yi/sakura-showjs"
   },
   "types": "dist/index.d.ts",
   "buildOptions": {
@@ -22,7 +22,7 @@
       "global"
     ]
   },
-  "author": "sakurasz",
+  "author": "suanzi",
   "license": "ISC",
   "dependencies": {
     "animate.css": "^4.1.1"

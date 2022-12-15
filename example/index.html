@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        body {
+            position: relative;
+        }
+
+        .topp,
+        .top {
+            min-height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+
+        .container {
+            position: absolute;
+            bottom: 0;
+            width: 200px;
+            height: 1px;
+            background: #bfa;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="topp">
+    </div>
+    <div class="topp">
+    </div>
+    <div class="topp">
+    </div>
+    <div class="topp">
+    </div>
+    <div class="top">
+
+    </div>
+    <div class="container">
+
+    </div>
+    <script src="../dist/show.global.js">
+    </script>
+    <script>
+        const { Show: show } = Show
+        const showing = new show()
+        const add = () => {
+            const top = document.querySelector('.top')
+            const children = document.createElement('div')
+            children.style.height = 200 + 'px'
+            children.style.width = 200 + 'px'
+            children.style.backgroundColor = 'blue'
+            top.appendChild(children)
+            console.log('add child');
+        }
+        showing.listen({
+            selector: 'container',
+            callback: add
+        })
+    </script>
+</body>
+
+</html>

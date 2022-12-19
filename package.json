@@ -1,6 +1,6 @@
 {
   "name": "@sakurasz/show.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/show.esm-bundler.js",
   "module": "dist/show.esm-bundler.js",
